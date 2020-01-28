@@ -56,9 +56,12 @@ class BinarySearchTree:
         if node.left is not None:
             node.in_order_print(node.left)
         print(node.value)
+        
 
         if node.right is not None:
             node.in_order_print(node.right)
+
+        return node.value
 
     def bft_print(self, node):
         q = Queue()
